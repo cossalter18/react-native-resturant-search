@@ -1,4 +1,4 @@
-# react-native-resturant-search
+# React-Native-Resturant-Search
 
 This application was built to familiarize myself with React-Native and to explore the possiblites. 
 Wanting to gear my knowledge towards iOS development I felt this was a good app to start with. 
@@ -12,9 +12,9 @@ This app is designed for you to search for foods in your area. It is tied to Yel
 Inside the useResults component on line 19 you will have to set your own location. The location is hardcoded in as there is no geo-location technologies in this application. 
 
 ## Technologies
-React Native
-Expo
-Yelp API
-Axios
+- React Native
+- Expo
+- Yelp API
+- Axios
 
 Compatable with iOS and Android 
