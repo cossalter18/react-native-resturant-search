@@ -1,14 +1,13 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, ScrollView } from 'react-native';
 import SearchBar from '../Components/SearchBar';
-import yelp from '../API/yelp';
 import useResults from '../Hooks/useResults'
 import ResultsList from '../Components/ResultsList'
 
 
 
-const SearchScreen = ({ navigation }) => {
-    console.log(props)
+const SearchScreen = () => {
+    // console.log(props)
 
     const [term, setTerm] = useState('');
     // going to pass down search term and the call back to change it to the search bar component
@@ -35,9 +34,9 @@ const SearchScreen = ({ navigation }) => {
             {errorMessage ? <Text>{errorMessage}</Text> : null}
             {/* <Text>We have found {results.length} results</Text> */}
             <ScrollView>
-                <ResultsList results={filterResultsByPrice('$')} title="Cost Effective" navigation={navigation} />
-                <ResultsList results={filterResultsByPrice('$$')} title="Bit Pricier" navigation={navigation} />
-                <ResultsList results={filterResultsByPrice('$$$')} title="Big Spender" navigation={navigation} />
+                <ResultsList results={filterResultsByPrice('$')} title="Cost Effective"/>
+                <ResultsList results={filterResultsByPrice('$$')} title="Bit Pricier"/>
+                <ResultsList results={filterResultsByPrice('$$$')} title="Big Spender"/>
             </ScrollView>
         </>
     )
